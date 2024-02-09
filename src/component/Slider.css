@@ -1,0 +1,77 @@
+.slider {
+    width: 700%;
+    height: 90vh;
+    position: fixed; 
+    top: 10vh;
+    display: flex;
+    left: 0%;
+}
+
+.pictures {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100% !important;
+    background-position: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    transition: all 1s;
+}
+
+.p1{ background: url("https://wallpaperaccess.com/full/3166545.jpg"); }
+.p2{ background: url("https://wallpapers.com/images/featured/coffee-shop-background-02x9a49rdcr5c18i.jpg"); }
+.p3{ background: url("https://wallpapers.com/images/hd/clothing-shop-store-boutique-lfvb6xer25h5iphi.jpg"); }
+.p4{ background: url("https://e0.pxfuel.com/wallpapers/154/434/desktop-wallpaper-supermarket-grocery-shopping.jpg"); }
+.p5{ background: url("https://wallpapers.com/images/featured/grocery-store-c41zd4y08ityrnw1.jpg"); }
+.p6{ background: url("https://wallpaperset.com/w/full/8/a/5/243881.jpg"); }
+.p7{ background: url("https://media.allure.com/photos/5947f6676e33594840f9ead5/16:9/w_2560%2Cc_limit/AB7A1162.jpg"); }
+
+.buttons{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    padding: .5rem 1rem;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    z-index:  798 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+
+.buttons > button{
+    border: none;
+    outline: none;
+    background: none;
+    animation:  forButtons 2s linear infinite;
+}
+
+@keyframes forButtons {
+    50%{
+        transform: scale(1.1);   
+    }
+}
+
+.buttons > button > svg{
+    filter: drop-shadow(0 0 4px #000) drop-shadow(0 0 4px #000) drop-shadow(0 0 4px #000);
+    font-size: 10rem;
+    color: tan;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.buttons > button > svg:active{
+    transform: scale(.7);
+}
+
+menu{
+    width: 700%;
+    height: 90vh;
+    top: 10vh;
+    display: flex;
+    left: 0%;
+    background: red;
+    position: fixed;
+    z-index: 0 !important;
+    top: 10vh;
+}
